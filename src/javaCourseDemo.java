@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class javaCourseDemo {
     public static void main(String [] args){
 //        float score;
@@ -30,9 +29,8 @@ public class javaCourseDemo {
 
         //逢七过
         for (int i = 0; i <= 100; i++){
-            if (i%7==0){
+            if (i%7==0 || i%10==7 || i/10==7){
                 System.out.println("过");
-                continue;
             }else {
                 System.out.println(i);
             }
