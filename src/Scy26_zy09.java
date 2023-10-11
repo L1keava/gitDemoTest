@@ -17,14 +17,14 @@ public class Scy26_zy09 {
         average=(ps+java+english+pe)/4;
         max = getMax(getMax(ps,java),getMax(english,pe));
         min = getMin(getMin(ps,java),getMin(english,pe));
-        if (ps > 60 && java > 60 && english > 60 && pe > 60){
+        if (ps >= 80 && java >= 80 && english >= 80 && pe >=80){
             reward = true;
-        }else {
-            exam=true;
+        } else if (ps < 60 && java < 60 && english < 60 && pe < 60) {
+            exam = true;
         }
         System.out.println("姓名    班级       性别   ps   Java  英语   体育   平均分   最高分  最低分  奖学金  补考");
         System.out.println(xm+"  " + bj+"  " + xb + "    "+ ps + "  "+java + "  " + english
-                + "  " + pe + "  "+average + "  " +max + "  " + min + "   " + reward
+                + "  " + pe + "  "+average + "   " +max + "  " + min + "   " + reward
                 + "  " + exam);
     }
     public static double getMax(double num1,double num2){
