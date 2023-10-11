@@ -5,7 +5,6 @@ public class bigIntegerDemo {
         for (long i=1;i<=20230408;i++){
             result = result.add(BigInteger.valueOf(i));
         }
-        int a  =1;
-        System.out.println(result);
+        System.out.println("结果为：" + result);
     }
 }
