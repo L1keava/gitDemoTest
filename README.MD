@@ -1,2 +1,5 @@
-这是一个Java初学者练习使用git的仓库
-This is a repository for me as a Java beginners to practice using git.
+这是一个Java初学者的github的仓库
+
+仅用于存放本人在学习过程中所写的代码及对git版本控制的练习
+
+学无止境 不耻下问
