@@ -4,7 +4,6 @@ public class factorial2023 {
     public static void main(String[] args) {
         System.out.println(factorial(45));
     }
-
     public static BigInteger factorial(long times){
         long i = 0;
         BigInteger bigNum = new BigInteger("1");
