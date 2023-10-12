@@ -1,6 +1,6 @@
 import java.math.BigInteger;
 //阶乘测试
-public class factorial2023 {
+public class factorialDemo {
     public static void main(String[] args) {
         System.out.println(factorial(45));
     }
