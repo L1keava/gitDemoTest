@@ -1,3 +1,16 @@
+/*
+Java语言编写的简易计算器
+支持 加 减 乘 除 乘方 模除 运算
+没有更多的是因为我暂时没想到
+  ####   #    #     #     ####   #    #    ##    #    #   ####    #   #     #
+ #       #    #     #    #    #  #    #   #  #   ##   #  #    #    # #      #
+  ####   ######     #    #       ######  #    #  # #  #  #          #       #
+      #  #    #     #    #       #    #  ######  #  # #  #  ###     #       #
+ #    #  #    #     #    #    #  #    #  #    #  #   ##  #    #     #       #
+  ####   #    #     #     ####   #    #  #    #  #    #   ####      #       #
+
+ */
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -47,7 +60,6 @@ public class calculatorDemo {
                 //在这里写异常情况
                 System.out.println("运算符输入错误，可接受的运算符有：+ - * / ^ %");
         }
-
     }
     public static double add(double num1,double num2){
         return num1 + num2;
