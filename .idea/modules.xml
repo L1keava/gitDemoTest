@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SCY_gitDemo.iml" filepath="$PROJECT_DIR$/SCY_gitDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooczy_SCY/mooczy_SCY.iml" filepath="$PROJECT_DIR$/mooczy_SCY/mooczy_SCY.iml" />
       <module fileurl="file://$PROJECT_DIR$/scy26_zy0922/scy26_zy0922.iml" filepath="$PROJECT_DIR$/scy26_zy0922/scy26_zy0922.iml" />
       <module fileurl="file://$PROJECT_DIR$/scy26_zy1011/scy26_zy1011.iml" filepath="$PROJECT_DIR$/scy26_zy1011/scy26_zy1011.iml" />
       <module fileurl="file://$PROJECT_DIR$/scy26_zy1012/scy26_zy1012.iml" filepath="$PROJECT_DIR$/scy26_zy1012/scy26_zy1012.iml" />

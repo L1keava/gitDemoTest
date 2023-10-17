@@ -10,9 +10,9 @@ public class scy26_zy10 {
             mid = num3;
         }
         num1 = min;num2 = mid;num3 = max;
-        System.out.println(num1);
-        System.out.println(num2);
         System.out.println(num3);
+        System.out.println(num2);
+        System.out.println(num1);
     }
     public static int getMin(int x,int y){
         if ( x < y){

@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class doWhileDemo {
+public class doWhileDemo {
+    public static void main (String[] args){
+        int a = 1;
+
+    }
 }
