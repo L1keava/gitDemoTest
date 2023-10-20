@@ -9,6 +9,7 @@ public class scy26_zy10 {
         while (num <= input - 1) {
             if (input % num == 0) {
                 flag = false;
+                break;
             }
             num++;
         }
