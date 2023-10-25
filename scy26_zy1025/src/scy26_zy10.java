@@ -24,7 +24,7 @@ public class scy26_zy10 {
                 System.out.println("x(1) = " + root1);
                 System.out.println("x(2) = " + root2);
             } else {
-                //delta = 0
+                //delta = 0时
                 double root = b / -2 * a;
                 System.out.println("x = " + root);
             }
