@@ -26,6 +26,7 @@ public class scy26_zy10 {
             } else {
                 //delta = 0
                 double root = b / -2 * a;
+                System.out.println("x = " + root);
             }
         } else {
             System.out.println("有两个虚根");
