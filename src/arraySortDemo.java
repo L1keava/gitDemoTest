@@ -1,12 +1,15 @@
-import java.util.Random;
+import java.util.*;
 
 public class arraySortDemo {
     public static void main(String[] args) {
         //随机生成7个数 并且按照升序排序
-        int[] num = new int[7];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入要生成的随机数个数：");
+        int rand = scanner.nextInt();
+        int[] num = new int[rand];
         Random random = new Random();
         for (int i = 0; i <= num.length - 1; i++) {
-            num[i] = random.nextInt(30);
+            num[i] = random.nextInt(100);
         }
         System.out.print("排序前：");
         for (int i = 0; i <= num.length - 1; i++) {
@@ -27,6 +30,5 @@ public class arraySortDemo {
             System.out.print(num[i] + "   ");
         }
     }
-
 }
 
