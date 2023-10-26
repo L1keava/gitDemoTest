@@ -6,11 +6,10 @@ public class scy26_zy14 {
             if (num % 4 == 3) {
                 result = result - 1 / num;
             } else {
-                System.out.println(num);
                 result = result + 1 / num;
             }
             num += 2;
         }
-        System.out.println("结果为：    " + result * 4);
+        System.out.println("结果为：    " + result);
     }
 }
