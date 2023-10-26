@@ -1,5 +1,5 @@
 /**
-@author Yi
+ * @author Yi
  */
 public class hundredMoney {
     public static void main(String[] args) {

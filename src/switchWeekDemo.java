@@ -1,11 +1,12 @@
 import java.util.Scanner;
+
 public class switchWeekDemo {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int day;
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入一星期的第几天：");
         day = scanner.nextInt();
-        switch (day){
+        switch (day) {
             case 1:
                 System.out.println("星期一");
                 break;
@@ -15,7 +16,7 @@ public class switchWeekDemo {
             case 3:
                 System.out.println("星球三");
                 break;
-            case  4:
+            case 4:
                 System.out.println("星期四");
                 break;
             case 5:

@@ -1,9 +1,9 @@
 public class breakDemo {
-    public static void main(String[] args){
-        for (int i = 2;i<=200;i++){
+    public static void main(String[] args) {
+        for (int i = 2; i <= 200; i++) {
             boolean flag = true;
-            for (int k = 2;k<=i-1;k++){
-                if (i%k==0){
+            for (int k = 2; k <= i - 1; k++) {
+                if (i % k == 0) {
                     flag = false;
                     break;
                     /*
@@ -14,8 +14,8 @@ public class breakDemo {
                      */
                 }
             }
-            if (flag){
-                System.out.println(i +"是素数");
+            if (flag) {
+                System.out.println(i + "是素数");
             }
 
         }

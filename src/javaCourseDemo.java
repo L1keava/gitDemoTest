@@ -1,5 +1,5 @@
 public class javaCourseDemo {
-    public static void main(String [] args){
+    public static void main(String[] args) {
 //        float score;
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.print("请输入学生的成绩（100分制）：");
@@ -28,10 +28,10 @@ public class javaCourseDemo {
 //        }
 
         //逢七过
-        for (int i = 0; i <= 100; i++){
-            if (i%7==0 || i%10==7 || i/10==7){
+        for (int i = 0; i <= 100; i++) {
+            if (i % 7 == 0 || i % 10 == 7 || i / 10 == 7) {
                 System.out.println("过");
-            }else {
+            } else {
                 System.out.println(i);
             }
         }
