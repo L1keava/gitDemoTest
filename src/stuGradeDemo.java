@@ -2,6 +2,7 @@ import java.util.*;
 
 public class stuGradeDemo {
     public static void main(String[] args) {
+        //使用选择排序 降序
         int students, average, bad = 0, total = 0;
         int[] score;
         Random random = new Random();

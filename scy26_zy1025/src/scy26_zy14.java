@@ -13,4 +13,3 @@ public class scy26_zy14 {
         System.out.println("结果为：    " + result);
     }
 }
-    
