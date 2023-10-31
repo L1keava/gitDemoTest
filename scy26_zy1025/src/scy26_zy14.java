@@ -10,6 +10,6 @@ public class scy26_zy14 {
             }
             num += 2;
         }
-        System.out.println("结果为：    " + result);
+        System.out.println("结果为：    " + result * 4);
     }
 }
