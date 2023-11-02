@@ -15,8 +15,8 @@ public class selectionSortDemo {
         for (int i = 0; i <= num.length - 1; i++) {
             System.out.print(num[i] + "   ");
         }
-        for (int r = 0; r <= num.length - 1; r++) {
-            for (int i = r; i <= num.length - 1; i++) {
+        for (int r = 0; r < num.length; r++) {
+            for (int i = r; i < num.length; i++) {
                 if (num[r] > num[i]) {
                     int t = num[r];
                     num[r] = num[i];

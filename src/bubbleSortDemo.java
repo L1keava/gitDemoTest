@@ -14,11 +14,11 @@ public class bubbleSortDemo {
         }
         System.out.println();
         System.out.println("排序后的数：");
-        for (int i = 0; i <= arr.length - 1; i++) {
-            for (int j = i + 1; j <= arr.length - 1; j++) {
-                if (arr[i] < arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
+        for (int r = 0; r < arr.length; r++) {
+            for (int j = 0; j < arr.length - 1-r; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j + 1];
+                    arr[j + 1] = arr[j];
                     arr[j] = temp;
                 }
             }
