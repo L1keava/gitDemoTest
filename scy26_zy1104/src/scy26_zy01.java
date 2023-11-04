@@ -11,9 +11,9 @@ public class scy26_zy01 {
 
         System.out.println("""
                 数组应用Demo 功能如下\s
-                 1、成绩录入           2、成绩输出       3、计算总成绩和平均成绩\s
-                 4、输出最高分和最低分   5、查询输入的成绩  6、删除输入的成绩
-                 7、成绩降序排序""");
+                 1、成绩录入                    2、成绩输出       3、计算总成绩和平均成绩\s
+                 4、输出最高分和最低分、不及格人数  5、查询输入的成绩  6、删除输入的成绩
+                 7、成绩降序排序                 8、退出系统""");
         System.out.println("请输入你的选择：");
 
         int choice = scanner.nextInt();
@@ -56,6 +56,9 @@ public class scy26_zy01 {
                 //成绩降序排序
                 sortByDescending(scy_score);
                 main(arg);
+                break;
+            case 8:
+                quit();
                 break;
             default:
                 System.out.println("错误选项，请正确输入！");
@@ -134,7 +137,13 @@ public class scy26_zy01 {
         sortByDescending(copy);
         double max = copy[0];
         double min = copy[array.length - 1];
-        System.out.println("最高分为：" + max + "\n最低分为：" + min);
+        int loser =  0;
+        for (int i = 0;i<copy.length;i++){
+            if (copy[i] < 60){
+                loser++;
+            }
+        }
+        System.out.println("最高分为：" + max + "\n最低分为：" + min+"\n未及格人数为：" + loser);
     }
 
     public static void searchForIndex(double[] array, double target) {
@@ -148,5 +157,8 @@ public class scy26_zy01 {
         if (!found) {
             System.out.println("未找到" + target);
         }
+    }
+    public static void quit(){
+
     }
 }
