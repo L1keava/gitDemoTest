@@ -37,7 +37,7 @@ public class arrayDemo {
                 selectionSort(array);
                 break;
             case 5:
-                printArray(array);
+                printArray(array, array.length - 1);
                 break;
             case 6:
                 System.out.println("数组元素和为：" + arraySum(array));
@@ -51,7 +51,9 @@ public class arrayDemo {
                 arrayRemove(array, target);
                 break;
             case 9:
-                arrayInsert(array);
+                System.out.println("请输入想要插入的数：");
+                target = scanner.nextInt();
+                arrayInsert(array, target, insArray);
                 break;
             case 10:
                 arrayReverse(array);
@@ -74,6 +76,7 @@ public class arrayDemo {
             array[i] = random.nextInt(bounds);
         }
         System.out.println("成功生成随机数！");
+        printArray(array, array.length - 1);
         main(arg);
     }
 
@@ -115,7 +118,7 @@ public class arrayDemo {
                 }
                 break;
         }
-        printArray(array);
+        printArray(array, array.length - 1);
         main(arg);
     }
 
@@ -147,14 +150,14 @@ public class arrayDemo {
                 }
                 break;
         }
-        printArray(array);
+        printArray(array, array.length - 1);
         main(arg);
     }
 
-    public static void printArray(int[] array) {
+    public static void printArray(int[] array, int index) {
         //输出数组
-        for (int j : array) {
-            System.out.print(j + "  ");
+        for (int i = 0; i < index; i++) {
+            System.out.print(array[i] + "  ");
         }
         System.out.println();
         main(arg);
@@ -176,23 +179,50 @@ public class arrayDemo {
 
     public static void arrayRemove(int[] array, int target) {
         //数组删除元素
-        for (int i  = 0;i<array.length;i++){
-            if (array[i] == target){
-                for (int j = i;j<array.length-1;j++){
+        boolean deleted = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == target) {
+                for (int j = i; j < array.length; j++) {
                     array[i] = array[j];
+                }
+                deleted = true;
+                break;
+            }
+        }
+        if (deleted) {
+            System.out.println("删除完成。");
+            printArray(array, array.length - 1);
+        } else {
+            System.out.println("删除失败！原因：未找到。");
+        }
+    }
+
+    public static void arrayInsert(int[] array, int target, int[] insArray) {
+        //数组插入元素
+        System.arraycopy(array, 0, insArray, 0, array.length);
+        insArray[insArray.length - 1] = target;
+        for (int i = 0; i < insArray.length; i++) {
+            for (int j = i; j < insArray.length; j++) {
+                if (insArray[i] > insArray[j]) {
+                    int temp = insArray[i];
+                    insArray[i] = insArray[j];
+                    insArray[j] = temp;
                 }
             }
         }
-        System.out.println("删除完成。");
-        printArray(array);
-    }
-
-    public static void arrayInsert(int[] array) {
-        //数组插入元素
+        System.out.println("插入完成");
+        printArray(insArray, insArray.length - 1);
     }
 
     public static void arrayReverse(int[] array) {
         //数组颠倒输出
+        if (array.length % 2 == 0) {
+            for (int i = array.length - 1, j = 0; i > array.length / 2; i--) {
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
     }
 
     public static void arrayCopy(int[] origin, int[] copy) {
@@ -205,7 +235,7 @@ public class arrayDemo {
         }
          */
         System.out.println("已复制到array2:");
-        printArray(array2);
+        printArray(array2, array2.length - 1);
     }
 
     public static void end() {
