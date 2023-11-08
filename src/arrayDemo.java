@@ -7,6 +7,9 @@ public class arrayDemo {
     public static String[] arg = new String[1];
     public static int[] array = new int[10];
     public static int[] array2 = new int[10];
+    public static int[] insArray = new int[11];
+    public static int target;
+
     public static void main(String[] args) {
 
         System.out.println("""
@@ -43,7 +46,9 @@ public class arrayDemo {
                 System.out.println("数组元素平均值为：" + arrayAvg(array));
                 break;
             case 8:
-                arrayRemove(array);
+                System.out.println("请输入想要删除的数：");
+                target = scanner.nextInt();
+                arrayRemove(array, target);
                 break;
             case 9:
                 arrayInsert(array);
@@ -169,8 +174,17 @@ public class arrayDemo {
         return (double) arraySum(array) / array.length;
     }
 
-    public static void arrayRemove(int[] array) {
-        //数组删除元素W
+    public static void arrayRemove(int[] array, int target) {
+        //数组删除元素
+        for (int i  = 0;i<array.length;i++){
+            if (array[i] == target){
+                for (int j = i;j<array.length-1;j++){
+                    array[i] = array[j];
+                }
+            }
+        }
+        System.out.println("删除完成。");
+        printArray(array);
     }
 
     public static void arrayInsert(int[] array) {
