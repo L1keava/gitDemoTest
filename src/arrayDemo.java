@@ -7,7 +7,6 @@ public class arrayDemo {
     public static String[] arg = new String[1];
     public static int[] array = new int[10];
     public static int[] array2 = new int[10];
-
     public static void main(String[] args) {
 
         System.out.println("""
