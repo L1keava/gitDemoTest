@@ -8,6 +8,7 @@ public class bubbleSortDemo {
         for (int i = 1; i <= arr.length; i++) {
             arr[i - 1] = random.nextInt(100);
         }
+
         System.out.println("排序前的数：");
         for (int i = 1; i <= arr.length; i++) {
             System.out.print(arr[i - 1] + " ");
