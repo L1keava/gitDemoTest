@@ -17,12 +17,28 @@ class student {
         System.out.print("  " + getXm() + " 的平均成绩为：" + (getGs() + getYy() + getJava() + getTy()) / 4);
     }
 
+    double getMax(double num1, double num2) {
+        if (num1 > num2) {
+            return num1;
+        } else {
+            return num2;
+        }
+    }
+
+    double getMin(double num1, double num2) {
+        if (num1 < num2) {
+            return num1;
+        } else {
+            return num2;
+        }
+    }
+
     void maxScore() {
-        System.out.print("  " + getXm() + " 四科成绩中最高分为：" + scy26_zy04.getMax(scy26_zy04.getMax(getGs(), getYy()), scy26_zy04.getMax(getJava(), getTy())));
+        System.out.print("  " + getXm() + " 四科成绩中最高分为：" + getMax(getMax(getGs(), getYy()), getMax(getJava(), getTy())));
     }
 
     void minScore() {
-        System.out.print("  " + getXm() + " 四科成绩中最低分为:" + scy26_zy04.getMin(scy26_zy04.getMin(getGs(), getYy()), scy26_zy04.getMin(getJava(), getTy())));
+        System.out.print("  " + getXm() + " 四科成绩中最低分为:" + getMin(getMin(getGs(), getYy()), getMin(getJava(), getTy())));
     }
 
     void setBj(String bj) {
@@ -58,7 +74,11 @@ class student {
     }
 
     void setAge(double age) {
-        this.age = age;
+        if (age < 0 || age > 200) {
+            System.out.println("年龄输入有误");
+        } else {
+            this.age = age;
+        }
     }
 
     double getAge() {
@@ -66,7 +86,11 @@ class student {
     }
 
     void setGs(double gs) {
-        this.gs = gs;
+        if (gs < 0 || gs > 100) {
+            System.out.println("高数成绩输入有误");
+        } else {
+            this.gs = gs;
+        }
     }
 
     double getGs() {
@@ -74,7 +98,11 @@ class student {
     }
 
     void setYy(double yy) {
-        this.yy = yy;
+        if (yy < 0 || yy > 100) {
+            System.out.println("英语成绩输入有误");
+        } else {
+            this.yy = yy;
+        }
     }
 
     double getYy() {
@@ -82,7 +110,11 @@ class student {
     }
 
     void setJava(double java) {
-        this.java = java;
+        if (java < 0 || java > 100) {
+            System.out.println("Java成绩输入有误");
+        } else {
+            this.java = java;
+        }
     }
 
     double getJava() {
@@ -90,7 +122,11 @@ class student {
     }
 
     void setTy(double ty) {
-        this.ty = ty;
+        if (ty < 0 || ty > 100) {
+            System.out.println("体育成绩输入有误");
+        } else {
+            this.ty = ty;
+        }
     }
 
     double getTy() {
@@ -123,19 +159,4 @@ public class scy26_zy04 {
         }
     }
 
-    static double getMax(double num1, double num2) {
-        if (num1 > num2) {
-            return num1;
-        } else {
-            return num2;
-        }
-    }
-
-    static double getMin(double num1, double num2) {
-        if (num1 < num2) {
-            return num1;
-        } else {
-            return num2;
-        }
-    }
 }

@@ -1,7 +1,23 @@
 import java.util.Scanner;
 
 class cfx {
-    double length, width;
+    private double length, width;
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public double getWidth() {
+        return width;
+    }
 
     double area() {
         return length * width;
@@ -22,8 +38,8 @@ public class scy26_zy03 {
         cfx c1 = new cfx();
         System.out.println("请输入10组长方形的长和宽：");
         for (int i = 0; i < 10; i++) {
-            c1.length = scanner.nextDouble();
-            c1.width = scanner.nextDouble();
+            c1.setLength(scanner.nextDouble());
+            c1.setWidth(scanner.nextDouble());
             c1.printf();
         }
     }
