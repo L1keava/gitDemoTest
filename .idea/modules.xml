@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SCY_gitDemo.iml" filepath="$PROJECT_DIR$/SCY_gitDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gitDemoTest.iml" filepath="$PROJECT_DIR$/gitDemoTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mooczy_SCY/mooczy_SCY.iml" filepath="$PROJECT_DIR$/mooczy_SCY/mooczy_SCY.iml" />
       <module fileurl="file://$PROJECT_DIR$/scy26_zy0922/scy26_zy0922.iml" filepath="$PROJECT_DIR$/scy26_zy0922/scy26_zy0922.iml" />
       <module fileurl="file://$PROJECT_DIR$/scy26_zy1011/scy26_zy1011.iml" filepath="$PROJECT_DIR$/scy26_zy1011/scy26_zy1011.iml" />
@@ -10,6 +10,10 @@
       <module fileurl="file://$PROJECT_DIR$/scy26_zy1018/scy26_zy1018.iml" filepath="$PROJECT_DIR$/scy26_zy1018/scy26_zy1018.iml" />
       <module fileurl="file://$PROJECT_DIR$/scy26_zy1019/scy26_zy1019.iml" filepath="$PROJECT_DIR$/scy26_zy1019/scy26_zy1019.iml" />
       <module fileurl="file://$PROJECT_DIR$/scy26_zy1025/scy26_zy1025.iml" filepath="$PROJECT_DIR$/scy26_zy1025/scy26_zy1025.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scy26_zy1101/scy26_zy1101.iml" filepath="$PROJECT_DIR$/scy26_zy1101/scy26_zy1101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scy26_zy1104/scy26_zy1104.iml" filepath="$PROJECT_DIR$/scy26_zy1104/scy26_zy1104.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scy26_zy1108/scy26_zy1108.iml" filepath="$PROJECT_DIR$/scy26_zy1108/scy26_zy1108.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scy26_zy1115/scy26_zy1115.iml" filepath="$PROJECT_DIR$/scy26_zy1115/scy26_zy1115.iml" />
     </modules>
   </component>
 </project>
