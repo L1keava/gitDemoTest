@@ -28,11 +28,11 @@ class cfx {
     }
 
     double getLength() {
-        return length;
+        return this.length;
     }
 
     double getWidth() {
-        return width;
+        return this.width;
     }
 
     @Override

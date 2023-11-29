@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class yuan {
-    private double r;
+    double r;
 
     public yuan() {}
 
@@ -10,16 +10,16 @@ class yuan {
     }
 
     public double getR() {
-        return r;
+        return this.r;
     }
 
     double getArea() {
-        return 3.14 * r * r;
+        return 3.14 * this.r * this.r;
     }
 
     @Override
     public String toString() {
-        return "半径：" + r + " 面积：" + getArea();
+        return "半径：" +this.r + " 面积：" + getArea();
     }
 }
 
@@ -39,7 +39,7 @@ class yzt extends yuan {
 public class extendsTest {
     public static void main(String[] args) {
         System.out.println("请输入半径：");
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); 
         yuan yuan = new yuan(scanner.nextDouble());
         System.out.println("半径为 " + yuan.getR() + " 的圆的面积为：" + yuan.getArea());
         yzt yzt1 = new yzt();
