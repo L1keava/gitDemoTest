@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class scy26_zy01 {
+public class scy26_zy01 {
+    public static void main(String[] args) {
+
+    }
 }

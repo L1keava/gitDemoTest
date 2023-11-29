@@ -3,25 +3,20 @@ import java.util.Scanner;
 class sanjiaoxing {
     private double a, b, c;
 
-    void setA(double a) {
+    public sanjiaoxing(double a, double b, double c) {
         this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
     double getA() {
         return a;
     }
 
-    void setB(double b) {
-        this.b = b;
-    }
-
     double getB() {
         return b;
     }
 
-    void setC(double c) {
-        this.c = c;
-    }
 
     double getC() {
         return c;
@@ -46,11 +41,8 @@ class sanjiaoxing {
 public class scy26_zy05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        sanjiaoxing sjx = new sanjiaoxing();
+        sanjiaoxing sjx = new sanjiaoxing(scanner.nextDouble(),scanner.nextDouble(),scanner.nextDouble());
         System.out.println("请输入三角形三条边：");
-        sjx.setA(scanner.nextDouble());
-        sjx.setB(scanner.nextDouble());
-        sjx.setC(scanner.nextDouble());
         sjx.get();
     }
 }
