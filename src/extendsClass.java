@@ -6,17 +6,13 @@ class cfx {
     public cfx() {
     }
 
-    public cfx(double length, double width) {
-        this.length = length;
-        this.width = width;
-    }
 
     double getArea() {
-        return this.length * this.width;
+        return length * width;
     }
 
     double getZc() {
-        return (this.length + this.width) * 2;
+        return (length + width) * 2;
     }
 
     public void setLength(double length) {
@@ -28,22 +24,30 @@ class cfx {
     }
 
     double getLength() {
-        return this.length;
+        return length;
     }
 
     double getWidth() {
-        return this.width;
+        return width;
     }
 
     @Override
     public String toString() {
-        return "长方形的长：" + length + "宽：" + width
+        return "长方形的长：" + getLength() + "宽：" + getWidth()
                 + "面积：" + getArea() + "周长：" + getZc();
     }
 }
 
 class cft extends cfx {
     double height;
+
+    double getHeight() {
+        return height;
+    }
+
+    void setHeight(double height) {
+        this.height = height;
+    }
 
     double getTj() {
         return super.getArea() * height;
@@ -52,7 +56,7 @@ class cft extends cfx {
     @Override
     public String toString() {
         return "长方体的长：" + getLength() + " 宽：" + getWidth() + " 高："
-                + height + " 底面积：" + super.getArea() + " 体积：" + getTj();
+                + getHeight() + " 底面积：" + getArea() + " 体积：" + getTj();
     }
 }
 
@@ -64,9 +68,12 @@ public class extendsClass {
         cfx1.setLength(scanner.nextDouble());
         cfx1.setWidth(scanner.nextDouble());
         System.out.println(cfx1);
-        System.out.println("请输入长方体的高：");
         cft cft1 = new cft();
-        cft1.height = scanner.nextDouble();
+        System.out.println("请输入长方体的长和宽：");
+        cft1.setLength(scanner.nextDouble());
+        cft1.setWidth(scanner.nextDouble());
+        System.out.println("请输入长方体的高：");
+        cft1.setHeight(scanner.nextDouble());
         System.out.println(cft1);
     }
 }

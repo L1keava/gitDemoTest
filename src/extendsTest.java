@@ -3,7 +3,8 @@ import java.util.Scanner;
 class yuan {
     double r;
 
-    public yuan() {}
+    public yuan() {
+    }
 
     public yuan(double r) {
         this.r = r;
@@ -19,7 +20,7 @@ class yuan {
 
     @Override
     public String toString() {
-        return "半径：" +this.r + " 面积：" + getArea();
+        return "半径：" + this.r + " 面积：" + getArea();
     }
 }
 
@@ -39,11 +40,13 @@ class yzt extends yuan {
 public class extendsTest {
     public static void main(String[] args) {
         System.out.println("请输入半径：");
-        Scanner scanner = new Scanner(System.in); 
+        Scanner scanner = new Scanner(System.in);
         yuan yuan = new yuan(scanner.nextDouble());
         System.out.println("半径为 " + yuan.getR() + " 的圆的面积为：" + yuan.getArea());
         yzt yzt1 = new yzt();
-        yzt1.height = 5;
+        System.out.println("请输入圆柱体的高：");
+        yzt1.r = yuan.r;
+        yzt1.height = scanner.nextDouble();
         System.out.println(yzt1);
     }
 }
