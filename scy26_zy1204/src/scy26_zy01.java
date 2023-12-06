@@ -3,13 +3,11 @@ import java.util.Scanner;
 abstract class yuan {
     double r;
     final double pi = 3.14;
-
     abstract double area(double r);
 }
 
 class yz extends yuan {
-    double r, h;
-    final double pi = 3.14;
+    double h;
 
     double area(double r) {
         return pi * r * r;
@@ -21,7 +19,7 @@ class yz extends yuan {
 
     @Override
     public String toString() {
-        return "体积为：" + tj(r, h);
+        return "圆柱体的体积为：" + tj(r, h);
     }
 }
 
