@@ -11,8 +11,6 @@ interface xz1 extends xz {
 }
 
 abstract class yuanxing implements xz {
-    public yuanxing() {
-    }
 
     double r;
     private final double pi = 3.14;
