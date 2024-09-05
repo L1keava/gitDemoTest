@@ -142,8 +142,6 @@ class Game(object):
                 # 监听发射子弹事件
                 if event.type == HERO_FIRE_EVENT:
                     self.player.play_sound("bullet.wav")
-
-                    score = self.hero.blowup(self.enemies_group)
                     self.hero.fire(self.all_group)
                     self.hud_panel.increase_score(score)
                 # 监听取消英雄无敌事件
@@ -161,7 +159,7 @@ class Game(object):
                     print("英雄牺牲了...")
 
                     # 生命计数 -1
-                    self.hud_panel.lives_count = 999
+                    self.hud_panel.lives_count -= 1
 
                     # 更新生命计数显示
                     self.hud_panel.show_lives()
@@ -171,7 +169,6 @@ class Game(object):
                 # 监听玩家按下字母 b，引爆炸弹
                 if event.type == pygame.KEYDOWN and event.key == pygame.K_b:
                     # 如果英雄没有牺牲同时有炸弹
-                    self.hero.bomb_count = 999
                     if self.hero.hp > 0 and self.hero.bomb_count > 0:
                         self.player.play_sound("use_bomb.wav")
 
