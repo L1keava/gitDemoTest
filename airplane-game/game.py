@@ -142,8 +142,9 @@ class Game(object):
                 # 监听发射子弹事件
                 if event.type == HERO_FIRE_EVENT:
                     self.player.play_sound("bullet.wav")
+
                     self.hero.fire(self.all_group)
-                    self.hud_panel.increase_score(score)
+
                 # 监听取消英雄无敌事件
                 if event.type == HERO_POWER_OFF_EVENT:
                     print("取消无敌状态...")
