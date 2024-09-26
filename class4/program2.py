@@ -33,11 +33,11 @@ def weekOfDate(year, month, day):
 year = int(input("请输入年份："))
 month = int(input("请输入月份："))
 print("一\t二\t三\t四\t五\t六\t日")
-week = weekOfDate(year, month, 0)+1
-for i in range(1,week):
-    print("\t",end="")
-for thisday in range(1,daysInMonth(year,month)+1):
+week = weekOfDate(year, month, 0) + 1
+for i in range(1, week):
+    print("\t", end="")
+for thisday in range(1, daysInMonth(year, month) + 1):
     week = weekOfDate(year, month, thisday)
-    print(thisday,end="\t")
-    if week==0:
+    print(thisday, end="\t")
+    if week == 0:
         print("\n")
