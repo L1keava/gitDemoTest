@@ -27,9 +27,10 @@ def weekOfDate(year, month, day):
 
     monthday = 0
     for i in range(1, month):
-        monthday += daysInMonth(year, month)
-    return (yearday + monthday + day) % 7 + 1
+        monthday += daysInMonth(year, i)
+    return (yearday + monthday + day) % 7
 
 
 weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"]
-print(weeks[weekOfDate(2024, 9, 26)])
+print(weekOfDate(2024, 9, 22))
+print(weeks[weekOfDate(2024, 9, 23)])

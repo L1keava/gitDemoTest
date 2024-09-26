@@ -1,5 +1,5 @@
 def islun(year):
-    if int(year) % 400 == 0 or (int(year) % 4 == 0 and int(year) % 100 != 0):
+    if int(year) % 400 == 0 or int(year) % 4 == 0 and int(year) % 100 != 0:
         return True
     else:
         return False
@@ -28,7 +28,7 @@ for i in range(1900, year):
 
 monthDay = 0
 for i in range(1, month):
-    monthDay += daysInMonth(year, month)
+    monthDay += daysInMonth(year, i)
 
 print(yearDay)
 print(monthDay)
