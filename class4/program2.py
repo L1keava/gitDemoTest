@@ -40,4 +40,4 @@ for thisday in range(1, daysInMonth(year, month) + 1):
     week = weekOfDate(year, month, thisday)
     print(thisday, end="\t")
     if week == 0:
-        print("\n")
+        print("")
