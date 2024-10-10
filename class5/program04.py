@@ -1,0 +1,7 @@
+D = input("请输入十进制数字")
+B = bin(int(D)).replace("0b","")
+O = oct(int(D)).replace("0o","")
+H = hex(int(D)).replace("0x","")
+print("%s转换为二进制为：%s"%(D,B))
+print("%s转换为八进制为：%s"%(D,O))
+print("%s转换为十六进制为：%s"%(D,H))
