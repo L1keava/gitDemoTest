@@ -1,2 +1,2 @@
 instr = "thisthat"
-print(instr.replace("t","O"))
+print(instr.replace("t", "O"))
