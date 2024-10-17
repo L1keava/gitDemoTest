@@ -1,0 +1,6 @@
+numList = eval(input("请输入列表："))
+stri = input("请输入两个下标：").strip()
+index = stri.split(",")
+findex = int(index[0])
+tindex = int(index[1])
+print(numList[findex:tindex])
