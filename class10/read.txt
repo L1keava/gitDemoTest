@@ -1,0 +1,10 @@
+# This is comment
+Code here...
+# print words
+#
+#
+print('hello world')
+# hello
+world
+#
+!!!
