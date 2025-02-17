@@ -1,5 +1,0 @@
-file1 = open('python10.txt',encoding='utf-8')
-print(file1.tell())
-print(file1.read(10))
-print(file1.tell())
-print(file1.read())

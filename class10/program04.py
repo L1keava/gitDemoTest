@@ -1,6 +1,0 @@
-file1 = open('num.txt')
-data = str(file1.readlines()).replace(' ',',')
-numList = data.replace('[','').replace(']','').replace('\'','').split(',')
-print("排序前:"+str(numList))
-numList = sorted(numList)
-print("排序后:"+str(numList))

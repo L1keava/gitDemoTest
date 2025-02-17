@@ -1,6 +1,0 @@
-file1 = open('python10.txt',encoding='utf-8')
-file2 = open('python10.txt',encoding='utf-8')
-print(file1.read())
-print(file1.readlines())
-file1.close()
-file2.close()

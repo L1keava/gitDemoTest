@@ -1,6 +1,0 @@
-a = int(input("输入第一个数："))
-b = int(input("输入第二个数："))
-print("%d+%d=%d"%(a,b,a+b))
-print("%d-%d=%d"%(a,b,a-b))
-print("%dx%d=%d"%(a,b,a*b))
-print("%d/%d=%d"%(a,b,a/b))
