@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cc9897-33d2-4020-a94c-aa801a89277c" name="更改" comment="init">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitDemoTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.cutdown.executor": "Run",
     "Python.game.executor": "Run",
     "Python.game_hud.executor": "Run",
@@ -105,6 +102,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="lanqiaoCup" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="lanqiaoCup" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
     <configuration name="program01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gitDemoTest" />
       <option name="ENV_FILES" value="" />
@@ -232,7 +240,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725497833444</updated>
-      <workItem from="1739772934339" duration="1071000" />
+      <workItem from="1739772934339" duration="1297000" />
+      <workItem from="1739774744582" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -247,6 +256,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="PythonConfigurationType" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
