@@ -20,7 +20,7 @@ public class UserTest {
         SqlSessionFactory sqlMapper = new SqlSessionFactoryBuilder().build(reader);
         SqlSession session = sqlMapper.openSession();
         User user = session.selectOne("findById",1);
-        System.out.println(user.getUage());
+        System.out.println(user.getUname());
         session.close();
     }
 }
