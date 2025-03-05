@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7395b289-5e64-4a68-9e44-a77be672e803" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mybatis/studb/Stu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/stuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/stuResultMap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/stutest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatisDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatisDemo/src/test/java/Test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisDemo/src/test/java/Test/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/src/main/java/com/dev/scy/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/src/main/resources/mapper/EmployeeMap.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3-CRUD/src/test/java/Test/employeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/stutest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/stutest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/shich/gitDemoTest/studbMybatis/src/main/resources/mapper&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shich/gitDemoTest/studbMybatis/pom.xml&quot;,
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,

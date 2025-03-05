@@ -31,6 +31,9 @@ public class stutest {
             System.out.println(stu);
         }
     }
+    public void sd(){
+        
+    }
     @After
     public void destroy() {
         sqlSession.commit();
