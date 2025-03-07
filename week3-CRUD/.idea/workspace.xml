@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="203836d3-0951-4711-9dec-068cfe09e367" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dev/scy/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/employeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../studbMybatis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../studbMybatis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../studbMybatis/src/test/java/Test/stutest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../studbMybatis/src/test/java/Test/stutest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMap.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -43,7 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.employeeTest.executor": "Run",
+    "JUnit.employeeTest.executor": "Debug",
     "JUnit.employeeTest.findById.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -61,8 +54,12 @@
       <recent name="C:\Users\shich\gitDemoTest\week3-CRUD\src\main\resources" />
       <recent name="C:\Users\shich\gitDemoTest\week3-CRUD\src\main\resources\mapper" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shich\gitDemoTest\week3-CRUD\src\main\resources\mapper" />
+      <recent name="C:\Users\shich\gitDemoTest\week3-CRUD\src\main\java\com\dev\scy\mapper" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.employeeTest.findById">
+  <component name="RunManager" selected="JUnit.employeeTest">
     <configuration name="employeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="week3-CRUD" />
       <extension name="coverage">
@@ -96,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.employeeTest.findById" />
         <item itemvalue="JUnit.employeeTest" />
+        <item itemvalue="JUnit.employeeTest.findById" />
       </list>
     </recent_temporary>
   </component>

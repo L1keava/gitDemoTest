@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.EmployeeMap">
+<mapper namespace="com.dev.scy.mapper.EmployeeMap">
     <resultMap id="empMap" type="com.dev.scy.Emp">
         <id property="id" column="eid"/>
         <result property="name" column="ename"/>
@@ -10,20 +10,17 @@
         <result property="position" column="eposition"/>
     </resultMap>
     <select id = "findEmployeeById" parameterType="int"
-            resultType="com.dev.scy.Emp" resultMap="empMap">
-        select * from employee where eid=${id}
+            resultMap="empMap">
+        select * from employee where eid=#{id}
     </select>
     <select id = "findAllEmployee" 
-            resultType="com.dev.scy.Emp" resultMap="empMap">
+            resultMap="empMap">
         select * from employee
     </select>
     <insert id="insertUser" parameterType="com.dev.scy.Emp">
-        insert into employee(eid,ename,eage,eposition) values(${id},"${name}",${age},"${position}")
+        insert into employee(eid,ename,eage,eposition) values(#{id},"#{name}",#{age},"#{position}")
     </insert>
     <update id="updateUser" parameterType="id">
-        update employee set ename=${id}  where eid=${id}
+        update employee set ename=#{id}  where eid=#{id}
     </update>
-    <delete id="deleteUser" parameterType="id">
-        
-    </delete>
 </mapper>
