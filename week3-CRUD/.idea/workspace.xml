@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="203836d3-0951-4711-9dec-068cfe09e367" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/src/main/java/com/dev/scy/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/src/main/resources/mapper/CustomerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElementsDemo/src/test/java/Test/CustomerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="203836d3-0951-4711-9dec-068cfe09e367" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

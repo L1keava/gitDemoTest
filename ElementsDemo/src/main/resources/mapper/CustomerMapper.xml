@@ -13,18 +13,58 @@
             and jobs=#{jobs}
         </if>
     </select>
-    
-<!--    <select id = "findAllCustomer" -->
-<!--            resultMap="customerMap">-->
-<!--        select * from customer order by eid asc-->
-<!--    </select>-->
-<!--    <insert id="insertCustomer" parameterType="com.dev.scy.Customer">-->
-<!--        insert into customer(eid,ename,eage,eposition) values(#{id},#{name},#{age},#{position})-->
-<!--    </insert>-->
-<!--    <update id="updateUser" parameterType="int">-->
-<!--        update customer set ename='张三',eage=28  where eid=#{id}-->
-<!--    </update>-->
-<!--    <delete id="deleteUser" parameterType="int">-->
-<!--        delete from customer where eid=#{id}-->
-<!--    </delete>-->
+    <select id="findByNameOrJobs" resultType="com.dev.scy.Customer"
+            parameterType="com.dev.scy.Customer">
+         select * from customer where 1=1
+        <choose>
+            <when test="username != null and username != ''">
+                and username like concat('%',#{username},'%')
+            </when>
+            <when test="jobs != null and jobs != ''">
+                and jobs=#{jobs}
+            </when>
+            <otherwise>
+                and phone is not null
+            </otherwise>
+        </choose>
+    </select>
+    <select id="findByWhere" resultType="com.dev.scy.Customer"
+            parameterType="com.dev.scy.Customer">
+        select * from customer
+        <where>
+            <if test="username != null and username != ''">
+                and username like concat('%',#{username},'%')
+            </if>
+            <if test="jobs != null and jobs != ''">
+                and jobs=#{jobs}
+            </if>
+        </where>
+    </select>
+    <select id="findByTrim" resultType="com.dev.scy.Customer"
+            parameterType="com.dev.scy.Customer">
+        select * from customer where 1 = 1
+        <trim prefix="where" prefixOverrides="and">
+            <if test="username !=null and username != ''">
+                and username like concat('%',#{username},'%')
+            </if>
+            <if test="jobs != null and jobs !=''">
+                and jobs=#{jobs}
+            </if>
+        </trim>
+    </select>
+    <update id="updateBySet" parameterType="com.dev.scy.Customer">
+        update customer
+        <set>
+            <if test="username != null and username != ''">
+                username=#{username},
+            </if>
+            <if test="jobs != null and username !=''">
+                jobs=#{jobs},
+            </if>
+            <if test="phone !=null and phone !=''">
+                phone=#{phone}
+            </if>
+        </set>
+        where id=#{id}
+    </update>
 </mapper>
