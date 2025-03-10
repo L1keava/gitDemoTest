@@ -7,8 +7,8 @@
     <list default="true" id="203836d3-0951-4711-9dec-068cfe09e367" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/../studbMybatis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../studbMybatis/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/employeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/employeeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.employeeTest.executor": "Debug",
+    "JUnit.employeeTest.executor": "Run",
     "JUnit.employeeTest.findById.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
