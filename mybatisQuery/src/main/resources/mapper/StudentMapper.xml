@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.StudentMap">
+    <select id = "findByName" parameterType="com.dev.scy.Student"
+            resultType="com.dev.scy.Student">
+        select * from td_student where 1 = 1
+        <if test="name != null and name != ''">
+            and name like concat('%', #{name}, '%')
+        </if>
+        <if test="name == null or name == ''">
+            and (name is null or name = '')
+        </if>
+    </select>
+    <select id="findByZy" parameterType="com.dev.scy.Student"
+            resultType="com.dev.scy.Student">
+        select * from td_student where 1 = 1
+        <if test="stuzy != null and stuzy != ''">
+            and stuzy = #{stuzy}
+        </if>
+        <if test="stuzy == null or stuzy == ''">
+            and (stuzy is null or name = '')
+        </if>
+    </select>
+    <select id="findByPhone" parameterType="com.dev.scy.Student"
+            resultType="com.dev.scy.Student">
+        select * from td_student where 1 = 1
+        <if test="phone != null and phone != ''">
+            and phone = #{phone}
+        </if>
+    </select>
+    <select id="findByLt" parameterType="com.dev.scy.Student"
+            resultType="com.dev.scy.Student">
+        select * from td_student where 1 = 1
+        <if test="id != null and id != ''">
+            and id &lt; #{id}
+        </if>
+    </select>
+    <select id="findById" parameterType="com.dev.scy.Student"
+            resultType="com.dev.scy.Student">
+        select * from td_student
+        where id IN
+        <foreach collection="list" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+</mapper>
