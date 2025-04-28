@@ -36,7 +36,7 @@ public class Classes {
         return "Class{" +
                 "id=" + id +
                 ", classname='" + classname + '\'' +
-                ", StudentList=" + StudentList +
+                
                 '}';
     }
 }
