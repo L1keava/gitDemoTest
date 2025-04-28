@@ -34,6 +34,7 @@ public class deleteWorkerTest {
     public void deleteWorkerTest() {
         WorkerMapper mapper = sqlSession.getMapper(WorkerMapper.class);
         int result = mapper.deleteWorker(4);
+        System.out.println(result);
         if (result > 0) {
             System.out.println("成功删除" + result + "条数据");
         } else {

@@ -13,5 +13,5 @@ public interface WorkerMapper {
     @Update("update tb_worker set name = #{name},age = #{age}  where id = #{id}")
     int updateWorker(Worker worker);
     @Delete("delete from tb_worker where id = #{id}")
-    int deleteWorker(int worker);
+    int deleteWorker(int id);
 }
